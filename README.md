@@ -5,6 +5,3 @@ npm install -g gatsby-cli - установка гэдсби помощника, 
 
 gatsby develop - запуск сайта на локалке
 
-
-
-vscode-gatsby-snippets расширение vscode для создания новых статей и страниц
