@@ -2,12 +2,24 @@ import React from 'react'
 import Social from '../components/Social'
 import Layout from '../components/layout'
 import Map from '../components/Map'
+import { Row, Col } from 'reactstrap';
 
 export default () => (
     <Layout>
-        <p>номер: 89515055879 (это должен быть кликабельный номер при нажатии я перехожу в звонки)</p>
-        <Map />
-        <Social size={45} />
+        <Row>
+            <Col sm="6" className="text-center address">
+                <div>
+                    <strong>г. Аксай, ул. Шолохова 5, 2 этаж </strong>
+                    <strong><a href="tel:+79001355311">+7(900)135-531-1</a></strong>
+                </div>
+                <div>
+                    <Social size={45} />
+                </div>
+            </Col>
+            <Col sm="6" >
+                <Map />
+            </Col>
+        </Row>
     </Layout>
 );
 
