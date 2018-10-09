@@ -1,32 +1,37 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Container } from 'reactstrap';
+import logo from '../images/logo.jpg';
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'black',
-      marginBottom: '1.45rem',
+      background: 'gray',
+      marginBottom: '1rem',
     }}
   >
-    <div
+    <Container
       style={{
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
             color: 'white',
             textDecoration: 'none',
           }}
+          
         >
+
+        <img src={logo}/>
           {siteTitle}
         </Link>
-      </h1>
-    </div>
+      </h2>
+    </Container>
   </div>
 )
 
