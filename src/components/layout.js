@@ -8,22 +8,22 @@ import './layout.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
+        query={graphql`
+            query SiteTitleQuery {
+                site {
+                    siteMetadata {
+                        title
+                    }
+                }
+            }
+        `}
     render={data => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'keywords', content: 'text/html' },
           ]}
         >
           <html lang="en" />
