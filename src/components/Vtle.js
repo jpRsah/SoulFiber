@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'gatsby'
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { FaVk, FaWhatsappSquare, FaOdnoklassnikiSquare,FaInstagram} from 'react-icons/fa';
+import { FaVk } from 'react-icons/fa';
 
 export default (props) => (
         <VerticalTimelineElement

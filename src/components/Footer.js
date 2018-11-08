@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Container } from 'reactstrap';
-import logo from '../images/logo.jpg';
 
 const Footer = ({ siteTitle }) => (
   <Container
     style={{
-      background: 'light',
+      backgroundColor: 'light',
       marginBottom: '1rem',
     }}
   >
-      <h3>
-        {siteTitle}
-      </h3>
+      <strong>
+        <a href="https://github.com/jpRsah/SoulFiber" target="__blank"> {siteTitle} на GitHub. </a>
+      </strong>
+      Сделан руководителем с душой.
   </Container>
 )
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Layout from '../components/layout'
@@ -37,7 +38,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
-            link
+            # link
             title
             description
           }

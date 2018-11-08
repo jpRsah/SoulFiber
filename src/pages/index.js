@@ -3,12 +3,23 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
-  CardSubtitle, CardBody } from 'reactstrap';
+  CardBody } from 'reactstrap';
+  import { Jumbotron } from 'reactstrap';
+
    // <p>анонсы новостей, блок списка видов занятий, блок с ссылкой на расписание, отзывы</p>
 const IndexPage = (props) => {
 
   return (
     <Layout>
+            <Jumbotron>
+        <h1 className="display-3">Здравствуйте!</h1>
+        <p className="lead"> Меня зовут Роман. Я руководитель детского центра "Soul Fiber".</p>
+        <hr className="my-2" />
+        <p>Этот сайт позволит Вам узнать о нашем центре более подробно. Вы сможете найти наши последние активности, познакомиться с преподавателями, узнать расписание и прочеть отзывы о нас.</p>
+        <p className="lead">
+          <Button color="primary">Learn More</Button>
+        </p>
+      </Jumbotron>
     <CardColumns>
       <Card>
         <CardImg top width="100%" src="https://pp.userapi.com/c638524/v638524847/36814/EdsuBR_XQMI.jpg" alt="Card image cap" />
@@ -16,7 +27,7 @@ const IndexPage = (props) => {
           <CardTitle>Танцы</CardTitle>
           
           <CardText>это брейк детка,ваши деточки будут топчеками в школке.</CardText>
-          <Link to="/brak" ><Button>подробней</Button></Link>
+          <Link to="/break-dance" ><Button>подробнее</Button></Link>
         </CardBody>
       </Card>
 
@@ -25,8 +36,8 @@ const IndexPage = (props) => {
         <CardBody>
           <CardTitle>Английский язык</CardTitle>
           
-          <CardText>нужно подготовиться к ЕГЭ?ГИА? или ваш ребенок тупой? то обращайтесь,за короткие сроки поможем подготовиться,
-            кроме тупых-тупых не приводите)так же есть курс для не тупых родителей детей,закрыть пробелы в изучении инглиша.</CardText>
+          <CardText>нужно подготовиться к ЕГЭ?ГИА? обращайтесь,за короткие сроки поможем подготовиться,
+            </CardText>
           <Link to="/ingland" ><Button>подробней</Button></Link>
         </CardBody>
       </Card>
