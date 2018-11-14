@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Layout from '../components/layout'
 
 // const Title = styled.h1` вот так создается стилизованный компонент

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container, Col, Row, ListGroup, ListGroupItem  } from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import party from '../images/promo/break-dance/party.png'
 import musc from '../images/promo/break-dance/musc.png'
 import metr from '../images/promo/break-dance/metr.png'
@@ -9,6 +9,7 @@ import ABlank from '../components/ABlank'
 import { FaVk, FaInstagram} from 'react-icons/fa';
 import foto1 from '../images/promo/break-dance/1.jpg'
 import foto2 from '../images/promo/break-dance/2.jpg'
+
 export default () => (
   <Layout>
     <div className="promo">
