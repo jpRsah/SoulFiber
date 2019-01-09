@@ -6,17 +6,24 @@ import ABlank from './ABlank';
 const Footer = ({ siteTitle }) => (
   <Container
     style={{
-      backgroundColor: 'light',
+      backgroundColor: '#f8f9fa',
       marginBottom: '1rem',
     }}
   >
+      <div
+        style={{
+          float: 'right',
+        }}>
+        Сделан руководителем с душой. 
+      <br/>
       <strong>
         <ABlank to="https://github.com/jpRsah/SoulFiber" label={`${siteTitle} на GitHub.`}/> 
-      </strong><br/>
-      Сделан руководителем с душой. <br/>
-      <strong>
-        <Link to="/site-terms">Пользовательское соглашение.</Link>
       </strong>
+      <br/>
+      <strong>
+        <Link to="terms/site">Пользовательское соглашение.</Link>
+      </strong>
+      </div>
   </Container>
 )
 

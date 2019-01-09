@@ -9,7 +9,7 @@ import './layout.scss'
 import { Container } from 'reactstrap';
 import Footer from './Footer';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, className }) => (
   <StaticQuery
         query={graphql`
             query SiteTitleQuery {
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <br/>
-        <Container className="main_container">
+        <Container className={`main_container ${className}`}>
           {children}
         </Container>
         <br/>
