@@ -1,7 +1,15 @@
 
 # запуск
 
-npm install -g gatsby-cli - установка гэдсби помощника, перед этим надо поставить npm
+установка гэдсби помощника, перед этим надо поставить npm
+>
+    npm install -g gatsby-cli
 
-gatsby develop - запуск сайта на локалке
+запуск сайта на локалке
 
+>
+    gatsby develop
+
+отправка на сервер
+> 
+    gatsby build
