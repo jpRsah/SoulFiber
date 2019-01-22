@@ -12,28 +12,28 @@ export default () => (
     <Layout>
         <Row>
             <Col>
-            <Calendar
-        calendarID="en.orthodox_christianity%23holiday%40group.v.calendar.google.com"
-        apiKey="AIzaSyAunY2R4utMXaWe1uAxIRdcRsbUlI8yhL8"
-      >
-        {({ loading, events }) =>
-          loading ? <div>loading</div> : 
-            <BigCalendar
-                localizer={localizer}
-                events={events}
-                startAccessor="start"
-                endAccessor="end"
-                />
-        }
-      </Calendar>
-      <Calendar
-        calendarID="65881750710-b0nkfjmkcb3ab7coeltbjmq7fsu2f9eo.apps.googleusercontent.com"
-        apiKey="R7roMYRc2qYrKbQaZLb1_Ntr"
-      >
-      {({ loading, events }) =>
-        loading ? <div>loading</div> : <div>{JSON.stringify(events)}</div>
-      }
-    </Calendar>
+              <Calendar
+                  calendarID="en.orthodox_christianity%23holiday%40group.v.calendar.google.com"
+                  apiKey="AIzaSyAunY2R4utMXaWe1uAxIRdcRsbUlI8yhL8"
+                >
+                  {({ loading, events }) =>
+                    loading ? <div>loading</div> : 
+                      <BigCalendar
+                          localizer={localizer}
+                          events={events}
+                          startAccessor="start"
+                          endAccessor="end"
+                          />
+                  }
+              </Calendar>
+              <Calendar
+                calendarID="65881750710-b0nkfjmkcb3ab7coeltbjmq7fsu2f9eo.apps.googleusercontent.com"
+                apiKey="R7roMYRc2qYrKbQaZLb1_Ntr"
+              >
+                {({ loading, events }) =>
+                  loading ? <div>loading</div> : <div>{JSON.stringify(events)}</div>
+                }
+              </Calendar>
             </Col>
         </Row>
     </Layout>

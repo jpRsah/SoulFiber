@@ -26,11 +26,12 @@
         background: lightgray;
     }
     @media only screen and (min-width: 1170px){
-    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-        left: 137%;
+        .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+            left: 137%;
+        }
     }
 }
-}
+// для договора
 .term{
     ol {
         list-style: none; 

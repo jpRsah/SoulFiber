@@ -13,7 +13,7 @@ export default () => (
   <Layout>
       <div className="promo">
             <div id="english_first" class="promo_first">
-                <h1>Английский язык с 6 лет</h1>
+                <h1>Английский язык с 6 лет в Аксае</h1>
                 <strong>Групповые и индивидуальные занятия</strong>
                 <strong>Лучшие современные практики</strong>
             </div>

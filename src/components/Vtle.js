@@ -1,19 +1,22 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import {  VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { FaVk } from 'react-icons/fa';
+import { FaEllipsisH } from 'react-icons/fa';
 
-export default (props) => (
+export default ({title, subTitle, description, path, date}) => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date={props.date}
-          iconStyle={{ background: 'red', color: 'black' }}
-          icon={<FaVk />}
+          date={date}
+          iconStyle={{ background: 'skyblue', color: 'white' }}
+          icon={<FaEllipsisH />}
         >
-              <h3 className="vertical-timeline-element-title">{props.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{props.subTitle}</h4>
+              <h3 className="vertical-timeline-element-title">{title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">{subTitle}</h4>
               <p>
-                  {props.description}
+                  {description}
+              </p>
+              <p> 
+                <Link to={path}>Подробнее</Link>
               </p>
         </VerticalTimelineElement>
     )

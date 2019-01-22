@@ -14,16 +14,17 @@ export default function News ({data}) {
         date={item.node.frontmatter.date}
         title={item.node.frontmatter.title}
         description={item.node.frontmatter.description}
+        path={item.node.frontmatter.path}
       />
     )
   })
 
   return (
-    <Layout className="bg-dark">
+    <Layout>
       <VerticalTimeline>
         {items}
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: 'red' }}
+          iconStyle={{ background: 'rgb(16, 204, 82)', color: 'blue' }}
         />
       </VerticalTimeline>
     </Layout>
