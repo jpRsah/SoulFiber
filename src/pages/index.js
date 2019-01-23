@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import razvivashki from '../images/index/развивашки.jpeg';
+// import razvivashki from '../images/index/развивашки.jpeg';
 import './style.scss'
 import Layout from '../components/layout'
 import { Card, Button, CardImg, CardTitle, CardText, CardColumns, CardBody } from 'reactstrap';
 import { Jumbotron } from 'reactstrap';
 import breakImg from '../images/promo/break-dance/3.jpg'
 import logopedImg from '../images/promo/logoped/1.jpg'
+import ABlank from '../components/ABlank'
 
    // <p>анонсы новостей, блок списка видов занятий, блок с ссылкой на расписание, отзывы</p>
 const IndexPage = ({prop}) => {
@@ -103,8 +104,7 @@ const IndexPage = ({prop}) => {
         <CardImg top width="100%" src="http://www.hinfo.info/sites/default/files/styles/news-detail/public/field/image/stressmeditating0_0.jpg" alt="Card image cap" />
         <CardBody>
           <CardTitle>Йога</CardTitle>
-          {/* <CardText></CardText> */}
-          {/* <Link to="/mam" ><Button>подробнее</Button></Link> */}
+          <ABlank to="https://www.instagram.com/studio_yog.a/"  label='Подробнее' />
         </CardBody>
       </Card>
       
