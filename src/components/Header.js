@@ -47,6 +47,10 @@ export default class Header extends React.Component {
               <NavItem>
                   <Link className="nav-link"to="/news">Новости</ Link>
               </NavItem>
+              <NavItem>
+                  <Link className="nav-link"to="/price">Цены</ Link>
+              </NavItem>
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                  Виды занятий
@@ -55,16 +59,23 @@ export default class Header extends React.Component {
                   <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/english">Английский язык</Link>
                   </DropdownItem>
-                  <DropdownItem>
+                  {/* <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/robot">Робототехника и программирование</Link>
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/break-dance">Брейк данс</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                      <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/logopedia">Логопед</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              
               <NavItem>
                   <Link className="nav-link"to="/calendar">Расписание</ Link>
+              </NavItem>
+              <NavItem>
+                  <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/terms/oferta">Оферта</Link>
               </NavItem>
               <NavItem>
                   <Link className="nav-link"to="/contacts">Контакты</ Link>
