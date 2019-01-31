@@ -13,11 +13,11 @@ export default () => (
         <Row>
             <Col>
               <Calendar
-                  calendarID="en.orthodox_christianity%23holiday%40group.v.calendar.google.com"
-                  apiKey="AIzaSyAunY2R4utMXaWe1uAxIRdcRsbUlI8yhL8"
+                  calendarID="524263056016-s341d2lua7495lcralkdqktukf263d17.apps.googleusercontent.com"
+                  apiKey="AIzaSyB4smmuZ3xM0aXAU8ooAILLHRQm9bLpP90"
                 >
                   {({ loading, events }) =>
-                    loading ? <div>loading</div> : 
+                    loading ? <div></div> : 
                       <BigCalendar
                           localizer={localizer}
                           events={events}
@@ -27,9 +27,9 @@ export default () => (
                   }
               </Calendar>
               <Calendar
-                calendarID="65881750710-b0nkfjmkcb3ab7coeltbjmq7fsu2f9eo.apps.googleusercontent.com"
-                apiKey="R7roMYRc2qYrKbQaZLb1_Ntr"
-              >
+                  calendarID="524263056016-s341d2lua7495lcralkdqktukf263d17.apps.googleusercontent.com"
+                  apiKey="AIzaSyB4smmuZ3xM0aXAU8ooAILLHRQm9bLpP90"
+                >
                 {({ loading, events }) =>
                   loading ? <div>loading</div> : <div>{JSON.stringify(events)}</div>
                 }
