@@ -74,9 +74,9 @@ export default class Header extends React.Component {
               <NavItem>
                   <Link className="nav-link"to="/calendar">Расписание</ Link>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                   <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/terms/oferta">Оферта</Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                   <Link className="nav-link"to="/contacts">Контакты</ Link>
               </NavItem>
