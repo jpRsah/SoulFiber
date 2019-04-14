@@ -9,7 +9,7 @@ export default () => (
         <Row>
             <Col sm="6" className="text-center address">
                 <div>
-                    <strong>г. Аксай, ул. Шолохова 5, 2 этаж </strong>
+                    <strong>г. Аксай, ул. Платова 6А, со Стороны ул. Карла Либкнехта</strong>
                     <br/>
                     <strong><a href="tel:+79001355311">+7(900)135-531-1</a></strong>
                 </div>

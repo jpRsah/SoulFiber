@@ -67,12 +67,37 @@ const IndexPage = ({prop}) => {
         <CardBody>
           <CardTitle>Развивашки</CardTitle>
           <CardText>
-            Групповые занятия для детей с 4 до 5 лет.
-            Сейчас много внимания уделяют развитию мелкой моторики￼, забывая про то, что детям просто необходимо бегать прыгать и шуметь для полноценного развития</CardText>
+            Групповые занятия для детей с 3 до 5 лет, проводит учитель-логопед.
+            {/* Сейчас много внимания уделяют развитию мелкой моторики￼, забывая про то, что детям просто необходимо бегать прыгать и шуметь для полноценного развития
+            */}</CardText> 
           {/* <Link to="/mam" ><Button>подробнее</Button></Link> */}
         </CardBody>
       </Card>
 
+      <Card >
+        {/* <CardImg top width="100%" src={razvivashki} alt="Card image cap" /> */}
+        <CardBody>
+          <CardTitle>Шахматы</CardTitle>
+          <CardText>
+            Групповые занятия для детей с 5 лет. Проводит кандидат в мастера спорта, чемпион города Батайск 2019 года.
+          </CardText> 
+          {/* <Link to="/mam" ><Button>подробнее</Button></Link> */}
+        </CardBody>
+      </Card>
+
+      <Card >
+        {/* <CardImg top width="100%" src={razvivashki} alt="Card image cap" /> */}
+        <CardBody>
+          <CardTitle>Йога "Мама и малыш"</CardTitle>
+          <CardText>
+            ИЩЕМ УСТАВШИХ МАМ ‼️😘 Скорее ведите их к нам!
+            🌹Мы знаем, что надо делать!🌹
+            Йога это то, что подойдёт всем и каждому, а мамам просто необходимо          
+          </CardText> 
+          {/* <Link to="/mam" ><Button>подробнее</Button></Link> */}
+        </CardBody>
+      </Card>
+{/* 
       <Card>
         <CardImg top width="100%" src="https://pp.userapi.com/c846523/v846523850/af091/4MK-BZ_JCF4.jpg" alt="Card image cap" />
         <CardBody>
@@ -80,7 +105,7 @@ const IndexPage = ({prop}) => {
           <CardText> Индивидуальные и груповые занятия. Для детей с 6 лет.</CardText>
           <Link to="/english" ><Button>подробнее</Button></Link>
         </CardBody>
-      </Card>
+      </Card> */}
 
       <Card style={{ backgroundColor: '#0AEBAD', borderColor: '#333' }}>            
         <CardImg top width="100%" src={logopedImg} alt="логопед в Аксае" />
@@ -97,14 +122,6 @@ const IndexPage = ({prop}) => {
           <CardTitle>Математика</CardTitle>
           <CardText>Индивидуальные занятия.</CardText>
           {/* <Link to="/math" ><Button>подробнее</Button></Link> */}
-        </CardBody>
-      </Card>
-      
-      <Card >
-        <CardImg top width="100%" src="http://www.hinfo.info/sites/default/files/styles/news-detail/public/field/image/stressmeditating0_0.jpg" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Йога</CardTitle>
-          <ABlank to="https://www.instagram.com/studio_yog.a/"  label='Подробнее' />
         </CardBody>
       </Card>
       

@@ -8,13 +8,17 @@ import {
 
 
 export default (props) => {
+    const point = {
+        lat: 47.265279, 
+        lng: 39.864591
+    };
 
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
         <GoogleMap
             defaultZoom={18}
-            defaultCenter={{ lat: 47.274137, lng: 39.860969 }}
+            defaultCenter={point}
             >
-            <Marker  position={{ lat: 47.274137, lng: 39.860969 }}/>
+            <Marker  position={point}/>
         </GoogleMap>
     ));
 
