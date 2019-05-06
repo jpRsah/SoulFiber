@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button, Form, FormGroup, Label } from 'reactstrap';
 import Layout from '../components/layout'
-import { consolidateStreamedStyles } from 'styled-components';
 export default class Pfr extends React.Component {
 
   constructor(props) {

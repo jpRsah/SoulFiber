@@ -9,6 +9,17 @@ import './layout.scss'
 import { Container } from 'reactstrap';
 import Footer from './Footer';
 
+window.replainSettings = { id: 'a7a25491-93b2-4b36-bf35-66eb679297df' };
+
+(function(u){
+  var s=document.createElement('script');
+  s.type='text/javascript';
+  s.async=true;
+  s.src=u;
+  var x=document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+
 const Layout = ({ children, className }) => (
   <StaticQuery
         query={graphql`
@@ -38,6 +49,7 @@ const Layout = ({ children, className }) => (
         </Container>
         <br/>
         <Footer siteTitle={data.site.siteMetadata.title} />
+
       </>
     )}
   />
