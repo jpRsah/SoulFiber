@@ -57,11 +57,8 @@ export default class Header extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                      <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/english">Английский язык</Link>
-                  </DropdownItem>
-                  {/* <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/robot">Робототехника и программирование</Link>
-                  </DropdownItem> */}
+                  </DropdownItem>
                   <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/break-dance">Брейк данс</Link>
                   </DropdownItem>
