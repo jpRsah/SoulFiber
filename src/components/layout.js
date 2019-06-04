@@ -38,7 +38,7 @@ class Layout extends React.Component {
   }
 
   render(){
-    const { children, className } = this.props;
+    const { children, className, description, keywords, title } = this.props;
     return (
       <StaticQuery
             query={graphql`
@@ -53,10 +53,10 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={data.site.siteMetadata.title}
+              title={title ? data.site.siteMetadata.title+' | '+title : data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'text/html' },
+                { name: 'description', content: description ? description : 'Результаты занятий не заставят себя ждать, мы умеем вдохновлять. Оставьте своего ребенка у настоящих профессионалов, любящих свое дело! Брейк-данс, логопедия, шахматы, робототехника, программирование и развивашки с 2.5 лет. ' },
+                { name: 'keywords', content: keywords ? keywords : 'Брейк данс, break dance, робототехника, программирование, шахматы, присмотр, развивашки, аксай, танцы, ардуино, arduino, летний лагерь, раннее развитие, хип хоп, детям, логопед, логопедические, занятия, с логопедом, секция' },
               ]}
             >
               <html lang="ru" />

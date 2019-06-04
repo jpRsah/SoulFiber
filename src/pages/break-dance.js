@@ -11,9 +11,13 @@ import foto1 from '../images/promo/break-dance/1.jpg'
 import foto2 from '../images/promo/break-dance/2.jpg'
 
 export default () => (
-  <Layout>
+  <Layout
+  title='Брейк-данс в Аксае'
+  description='Ведет опытный преподаватель, любящий свое дело. Секция официально зарегистрирована в объединении, занимающимся развитием направления на олимпийских играх'
+  keywords='физическое развитие танцы хипхоп хип хоп брейк break данс dance олимпийский танец субкультура секция занятия цена'
+  >
     <div className="promo">
-      <h1>Брейк данс в Аксае</h1>
+      <h1>Брейк-данс в Аксае</h1>
       {/* ЗДЕСЬ ВИДЕО О БРЕЙКЕ, ОТЗЫВЫ УЧЕНИКОВ */}
       <div className="description">
         <h2>Брейк-данс - это</h2>
@@ -72,7 +76,7 @@ export default () => (
               2011 Танцевальная студия «Zumba». Тренер.<br/>
               2014-2017 <ABlank to="https://vk.com/funkybeatclub" label="Танцевальная студия «Funky Beat»"/>. Тренер.<br/>
               2017 <ABlank to="https://yutnidvorik.business.site/" label="Танцевальная студия детского центра «Юла»"/>. Преподаватель по танцам.<br/>
-              2017-2018 <ABlank to="https://soul-fiber.ru" label="Детский центр «Soul Fiber»"/>. Тренер по Брейк дансу.<br/>
+              2017-2019 <ABlank to="https://soul-fiber.ru" label="Детский центр «Soul Fiber»"/>. Тренер по Брейк дансу.<br/>
             </blockquote>
           </Col>
           <Col sm="6">
@@ -119,8 +123,12 @@ export default () => (
         <Col>
           <blockquote className="mt-3">
             <strong>Успехи учеников:</strong><br/>
+            2019 Аксай Выступление на концерте, организованном федерацией Акробатического рок-н-ролла <br/>
+            2019 Аксай <a href="https://vk.com/delovjame">Дело в джеме VOL. 1</a> <br/>
+              Бибой Флэш (Шопин Иван) занял первое место в номинации 1 на 1 kids
+              <a href="https://sun9-7.userapi.com/c851136/v851136103/1336b2/cXbPqOIdnag.jpg"> Глянуть фото</a> <br/>
             2019 Новочеркасск <a href="https://vk.com/springchallenge2019">SPRING CHALLENGE III </a> 
-              Бибой Флэш прошел отбор в 16 лучших танцоров в номинации Kids
+              Бибой Флэш (Шопин Иван) прошел отбор в 16 лучших танцоров в номинации Kids
             2018 <a href="https://vk.com/openbreakingleague">Open Breaking League Of South Russia </a> 
               бибой Назар (Эксузян Назарий): 4 место в категории baby 
             <a href="https://www.youtube.com/watch?v=qJpZVoynVYU&index=21&list=PLYxSes5ZyhrdOMXUrwS_SgjiG9-TjZV1q"> Глянуть</a> <br/>
@@ -156,7 +164,7 @@ export default () => (
               <a href="https://www.instagram.com/bboy_rash_sf" rel="noopener noreferrer" title="bboy_rash_sf"  target="_blank">
                   <FaInstagram size={32} color="#833ab4"/>
               </a>
-              <a href="https://vk.com/jpc_rash" rel="noopener noreferrer" title="Роман Романов" target="_blank">
+              <a href="https://vk.com/bboy_rash_sf" rel="noopener noreferrer" title="Роман Романов" target="_blank">
                   <FaVk size={32} color="#45668e"/>
               </a>
 

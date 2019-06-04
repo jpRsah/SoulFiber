@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/logo-320x118.png';
+import logo from '../images/logo320.png';
 import {
   Collapse,
   Navbar,
@@ -14,7 +14,7 @@ import {
 import styled from 'styled-components';
 
 const LogoImage = styled.img`
-  width: 203px;
+  width: 163px;
   position: absolute;
   top: 0;
   left: 16px;
@@ -64,6 +64,9 @@ export default class Header extends React.Component {
                   </DropdownItem>
                   <DropdownItem>
                       <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/logopedia">Логопед</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                      <Link style={{ textAlign: `right`}} className="nav-link ta_r" to="/chess">Шахматы</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
