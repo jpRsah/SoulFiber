@@ -15,16 +15,16 @@ class Layout extends React.Component {
 
   componentDidMount() {
 
-    // (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    // m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    // (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    // ym(53608273, "init", {
-    //       clickmap:true,
-    //       trackLinks:true,
-    //       accurateTrackBounce:true,
-    //       webvisor:true
-    // });
+    ym(53608273, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+    });
 
     window.replainSettings = { id: 'a7a25491-93b2-4b36-bf35-66eb679297df' };
     (function(u){
