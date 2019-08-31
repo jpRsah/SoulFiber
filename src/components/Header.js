@@ -34,7 +34,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="white" light expand="md">
               <Link className="navbar-brand" to="/">
                 <LogoImage src={logo} alt="Soul Fiber" />
               </Link>
